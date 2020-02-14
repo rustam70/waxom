@@ -1,0 +1,202 @@
+@font-face{
+	src:url('fonts/Montserrat-Regular.ttf');
+	font-family: 'Monterrat-Regular';
+}
+@font-face{
+	src:url('fonts/Montserrat-Bold.ttf');
+	font-family: 'Monterrat-Bold';
+}
+@font-face{
+	src:url('fonts/RobotoSlab-Regular.ttf');
+	font-family: 'RobotoSlab-Regular';
+}
+@font-face{
+	src:url('fonts/RobotoSlab-Bold.ttf');
+	font-family: 'RobotoSlab-Bold';
+}
+:root{
+	--main-font-size: 14px;
+	/*Названия шрифтов*/
+		
+	--main-font-family: 'RobotoSlab-Regular';
+	--rob-bold: 'RobotoSlab-Bold';
+	--mon-reg: 'Monterrat-Regular';
+	--mon-bold: 'Monterrat-Bold';
+
+	/* Цвета*/
+	--red: #c0301c;
+	--black: #555;
+	--gray: #f8f8f8;
+}
+body{
+	font: var(--main-font-size) var(--main-font-family);
+	color: var(--black) ;
+}
+.container{
+	width: 1140px;
+	margin:0 auto;
+}
+.row:before,
+.row:after{
+	content: '';
+	display: block;
+	clear:both;
+}
+/*Шапка начало*/
+.head{
+	background: url('../img/header.jpg');
+	padding: 37px 0 246px;
+}
+.head,.head a{
+	color: #fff;
+}
+.head-logo{
+	float:left;
+	font: 24px var(--mon-bold);
+	text-transform: capitalize;
+}
+.head-menu{
+	width: 530px;
+	margin-top: 5px;
+	float: right;
+}
+.head-menu a{
+	font-family:var(--mon-reg);
+	margin-right: 29px;
+}
+.head-menu a:last-child{
+	margin-right: 0;
+}
+.head-row{
+	margin-top: 246px;
+	text-align: center;
+}
+.head-title{
+	font: 48px var(--mon-reg);
+	text-transform: uppercase;
+}
+.head-subtitle{
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-top: 24px;
+	margin-bottom: 54px;
+}
+
+
+
+/* .head-menu a:nth-child(even){
+	font-size: 50px;
+}
+
+ */
+ /**/
+ .services{
+ 	padding-top: 100px;
+ }
+ /**/
+ .about{
+ 	background-color: var(--gray);
+ }
+/*Шапка конец*/
+
+/*Общие Стили страницы*/
+.page-btn,.page-title{
+	text-transform: uppercase;
+}
+.page-subtitle,.page-title{
+	text-align: center;
+}
+.page-btn{
+	border-radius: 2px;
+	background-color: transparent;
+	font: 16px var(--mon-reg);
+	border: 2px solid #fff;
+	color: #fff;
+	padding:13px 33px;
+}
+.page-title{
+	font: 20px var(--mon-reg);
+}
+.page-title:after{
+	content: '';
+	display: block;
+	width: 50px;
+	height: 2px;
+	background-color: var(--black);
+	margin: 25px auto 0;
+}
+.page-subtitle{
+	font-size: 16px;
+	margin-top: 24px;
+}
+/*Общие Стили страницы*/
+
+.services-list {
+	margin-top: 71px;
+}
+
+.serives-item {
+display: inline-block;
+width: 33%;
+text-align: center;
+
+}
+
+
+/*
+*/
+
+.about {
+	margin-top: 100px;
+	padding-bottom: 100px;: 
+}
+
+.page-title {
+	padding-top: 100px;
+}
+
+.about-text p{
+	padding-top: 70px;
+	width: 50%;
+	float: left;
+	text-align: justify;
+}
+
+.about-text p:last-child {
+	padding-left: 50px;
+}
+
+.about-img {
+	display: inline-block;
+	margin-top: 70px;
+}
+
+.about-item {
+margin-left: 25px;
+display: inline-block;
+text-align: center;
+
+}
+
+.about li:first-child{ 
+	margin-left: 0px;
+ }
+
+
+/**/
+
+
+
+/**/
+.logo {
+	vertical-align: top;
+	display: inline-block;
+	width: 15%;
+}
+
+.works-menu,.works-menu a{
+	padding-top: 28px;
+	text-align: center;
+	margin-right: 30px;
+	font-size: 16px;
+}
